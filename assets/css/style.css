@@ -1,0 +1,27 @@
+html {
+    behavior: smooth;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+h1, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg {
+    background: #C9D6FF;
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+}
+
+.bgContato {
+    background-color: rgba(0, 0, 0, 0.906);
+   
+}
+
+.green {
+    color: #79fe0c;
+}
