@@ -10,201 +10,167 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&family=Sora&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <title>My Portlofio</title>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">/Igorgll</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
-              <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="#projetos">Projetos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#curriculo">Currículo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#contato">Contato</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-end">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="http://github.com/igorgll" target="_blank"><i
-                            class="bi bi-github"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light"
-                        href="https://www.linkedin.com/in/igor-gon%C3%A7alves-lima-25371422a/" target="_blank"><i
-                            class="bi bi-linkedin"></i></a>
-                </li>
-            </ul> 
-          </div>
+            <a class="link linkH fs-4" href="#">/Igorgll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+                    <li class="nav-item me-2">
+                        <a class="linkH link" href="#modal" data-bs-toggle="modal"
+                        data-bs-target="#modal">Currículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linkH link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-end">
+                    <li class="nav-item">
+                        <a class="linkH link me-2" href="http://github.com/igorgll" target="_blank"><i
+                                class="bi bi-github"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link linkH"
+                            href="https://www.linkedin.com/in/igor-gon%C3%A7alves-lima-25371422a/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-    <div class="container-fluid p-0 bg-dark vh-100 d-flex align-items-center">
-        <div class="container py-5">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-6">
-                    <img src="https://github.com/igorgll.png" alt="" class="img-fluid rounded-circle border border-3">
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="d-flex justify-content-center mt-5">
+                    <img src="https://github.com/igorgll.png" alt="" class="img-fluid rounded-circle borda" />
                 </div>
-                <div class="col-md-6">
-                    <h1 class="text-light text-center display-1 mb-4">Olá 👋</h1>
-                    <p class="text-light text-justify fs-2 fw-bold mb-2 text-justify">Me chamo <span class="text-danger fw-bold">Igor
-                        Lima</span> e sou desenvolvedor <span class="text-info fw-bold"> Java Jr Full Stack!</span>
-                </p>
-                <p class="text-secondary fs-4 fw-bold mb-0">Sou um desenvolvedor Java Jr de São Paulo, Brasil. Faz 3
-                    meses que
-                    comecei o bootcamp da Generation Brasil onde me formei desenvolvedor Full Stack. Estou à procura
-                    de minha primeira oportunidade no mercado da Tecnologia. 😁</p>
+            </div>
+                <div class="row">
+                    <h1 class="linkH fw-bold text-center display-1 mb-4 mt-5">
+                        Olá,
+                    </h1>
+                    <p class="text-light text-justify fs-1 fw-bold mb-2 text-justify" id="animacao">
+                        me chamo
+                       Igor Lima e
+                        sou desenvolvedor
+                        <span class="span fw-bold">
+                            Java Jr Full Stack!</span>
+                    </p>
                     <div class="d-flex justify-content-start">
-                        <div class="d-flex align-items-center h-0">
-                            <a class="btn btn-outline-light mt-3 me-3" href="#contato">Contate-me</a>
-                            <a class="btn btn-outline-light mt-3 ms-3" href="#projetos">Projetos</a>
+                        <div class="d-flex align-items-center m-auto h-0">
+                            <a class="linkH link fs-5 mt-5 me-3 " href="#sobre">Saiba mais</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    
-    <div class="container-fluid vh-100 d-flex justify-content-center bg" id="projetos">
-            <div class="container">
-                <div class="row d-flex align-items-center mt-5">
-                <h1 class="text-center mt-4 fw-bold display-3">Projetos</h1>
-            <h2 class="text-dark text-center mt-5">Aqui estão meus projetos do
-                <span class="text-primary fw-bold">
-                    Github
-                </span>
-                onde desenvolvi com linguagens de programação do front e back-end.
-            </h2>
-
-                <div class="col-md-6 d-flex justify-content-center">
-                        <div class="card mt-5" style="width: 30rem;">
-                            <img src="./assets/img/285625fd06fc0ed84f0e0b0f579efd50.jpg" class="card-img-top" alt="...">
-                            <div class="card-body bg-dark">
-                                <p class="card-text text-warning fw-bold">aGenTIMove:</p>
-                                <p class="text-light">O projeto aGenTIMove foi o Projeto Integrador para finalização do
-                                    bootcamp da Generation Brasil. O projeto teve como objetivo
-                                    a construção de um e-commerce que visa
-                                    conectar pessoas com sedentarismo a
-                                    profissionais da saúde qualificados, afim de
-                                    que seja facilitado a oferta de serviços para
-                                    este público, e interessados em cuidar da
-                                    saúde.</p>
-                                <p class="text-primary fw-bold mb-0">Tecnologias usadas:<img class="mb-3 ms-3"
-                                        src="./assets/img/java.png" height="30" alt=""><img class="mb-2 ms-2"
-                                        src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular"
-                                        width="30" height="30" /><img class="mb-1 ms-2"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                                        alt="bootstrap" width="30" height="30" /><img class="mb-2 ms-2"
-                                        src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring"
-                                        width="30" height="30" /><img class="mb-2 ms-2"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                                        alt="mysql" width="30" height="30" /></p>
-
-
-                                <hr class="text-light mt-0">
-                                <div class="d-flex justify-content-end">
-                                    <a class="btn btn-outline-light mt-2 mb-2"
-                                        href="https://github.com/ProjetoIntegradorGen" target="_blank"><i
-                                            class="bi bi-github me-1"></i> GitHub repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-center">
-                        <div class="card mt-5" style="width: 30rem;">
-                            <img src="./assets/img/285625fd06fc0ed84f0e0b0f579efd50.jpg" class="card-img-top" alt="...">
-                            <div class="card-body bg-dark">
-                                <p class="card-text text-warning fw-bold">Blog Pessoal:</p>
-                                <p class="text-light">O Blog Pessoal foi um projeto desenvolvido durante o bootcamp
-                                    da Generation onde a ideia principal era o armazenamento de ideias. Nessa aplicação
-                                    tivemos o desevolvimento de API Rest usando o framework SpringBoot e a criação de
-                                    componentes do front-end usando o framework Angular.
-                                </p>
-                                <br>
-                                <p class="text-primary fw-bold mb-0">Tecnologias usadas:<img class="mb-3 ms-3"
-                                        src="./assets/img/java.png" height="30" alt=""><img class="mb-2 ms-2"
-                                        src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular"
-                                        width="30" height="30" /><img class="mb-1 ms-2"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                                        alt="bootstrap" width="30" height="30" /><img class="mb-2 ms-2"
-                                        src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring"
-                                        width="30" height="30" /><img class="mb-2 ms-2"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                                        alt="mysql" width="30" height="30" /></p>
-                                <hr class="text-light mt-0">
-
-                                <div class="d-flex justify-content-end">
-                                    <a class="btn btn-outline-light mt-2 mb-2"
-                                        href="https://github.com/Igorgll/Generation_BlogPessoal" target="_blank"><i
-                                            class="bi bi-github me-1"></i>Github repo</a>
-                                </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    <div class="container-fluid vh-100 d-flex bg-dark justify-content-center" id="curriculo">
-        <div class="container d-flex align-items-center mt-5">
+    <div class="container-fluid d-flex align-items-center vh-100" id="sobre">
+        <div class="container">
             <div class="row">
-                <img class="mb-5" src="./assets/img/meme.jpg" alt="">
-                    <h3 class="display-4 text-light fw-bold mb-5">Dá uma olhada aí no meu <span
-                            class="text-info fw-bold">currículo</span>, nunca te pedi nada... 🙄</h3>
-                    <button class=" m-auto btn btn-lg w-50 btn-outline-light" href="#modal" data-bs-toggle="modal"
-                        data-bs-target="#modal">Currículo</button>
-            </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img class="borda" src="./assets/img/sobre.jpg"  height="600px" alt="">
+                </div>
 
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <img src="./assets/img/cv.png" alt="">
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="col-md-6">
+                    <h2 class="span fw-bold mb-4">Sobre mim</h2>
+                    <p class="text-light fs-5 mb-0">
+                        Comecei minha aventura na área da tecnologia quando tive a grande oportunidade de fazer um intercâmbio para Michigan, EUA, onde estudei software engineering por 6 meses. Retornei ao Brasil e já fazem 3 meses que fui aprovado para fazer parte do bootcamp da Generation
+                        Brasil onde estudei durante 3 meses para me formar um desenvolvedor Full Stack Java Jr. Desde então,
+                        estou em constante evolução e à procura de minha primeira oportunidade no
+                        mercado da Tecnologia.
+                    </p>
+
+                    <p class="fw-bold text-white mt-4">Nome&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Igor Gonçalves Lima</p>
+                    <p class="fw-bold text-white mt-4">Idade&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21</p>
+                    <p class="fw-bold text-white mt-4">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; igorlimagn@gmail.com</p>
+                    <p class="fw-bold text-white mt-4">Celular&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (11) 95894-0886</p>
+
+                    <div class="mt-5">
+                    <a href="https://drive.google.com/file/d/1Dl8Q2k5VlDVdcozLBqddfkyhwyN894h6/view?usp=sharing" target="_blank" class="text-white botao">Currículo PDF</a>
+                </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="contato" class="jumbotron bgContato jumbotron-fluid jumbotronMargin">
+    <div class="container-fluid d-flex align-items-center">
+        <div class="container">
+            <h2 class="text-center text-white display-4 fw-bold mb-5">Minha <span class="span">evolução</span> </h2>
+            <div class="row d-flex justify-content-around mt-5">
+                <div class="col-md-3">
+                    <a class="linkH" href="https://agentimove.netlify.app/#/inicio" target="_blank">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./assets/img/Hand coding-bro.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-center text-white">Projeto <span class="span">aGenTIMove</span> </h5>
+                          <p class="card-text text-center text-white">E-commerce feito para fins do bootcamp da Generation Brasil.</p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="linkH" href="https://github.com/Igorgll/blogPessoalAngular" target="_blank">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./assets/img/Hand coding-rafiki.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-center span">Blog Pessoal</h5>
+                          <p class="card-text text-center text-white">Blog Pessoal desenvolvido durante o bootcamp da Generation Brasil.</p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="linkH" href="https://github.com/Igorgll" target="_blank">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./assets/img/Personal site-amico.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-center text-white">Visite meu <span class="span">GitHub!</span> </h5>
+                          <p class="card-text text-center text-white">Aqui você pode dar uma olhada nos meus estudos e projetos.</p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="jumbotron jumbotron-fluid jumbotronMargin">
         <div class="container-fluid p-0 vh-100 d-flex align-items-center">
             <div class="container">
                 <div class="formulario bg-fluid text-black">
-                    <h1 class="display-3 fw-bold mb-5 text-center text-light">Me mande uma <span class="green">
-                            mensagem!</span> 😊</h1>
+                    <h1 class="display-3 fw-bold mb-5 text-center text-light">
+                        Me mande uma
+                        <span class="span"> mensagem!</span>
+                    </h1>
                     <form class="needs-validation" novalidate>
                         <form>
                             <div class="row">
                                 <div class="col">
                                     <input type="text" id="nome" onkeyup="validaNome()" class="form-control"
-                                        placeholder="Nome">
+                                        placeholder="Nome" />
                                     <div id="txtNome"></div>
                                 </div>
                                 <div class="col">
                                     <input type="text" id="sobrenome" onkeyup="validaSobrenome()" class="form-control"
-                                        placeholder="Sobrenome">
+                                        placeholder="Sobrenome" />
                                     <div id="txtSobrenome"></div>
                                 </div>
                             </div>
@@ -212,24 +178,38 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1" class="form-text text-light email">Endereço de Email</label>
                             <input type="email" id="email" class="form-control" id="exampleInputEmail1"
-                                onkeyup="validaEmail()" aria-describedby="emailHelp" placeholder="nome@exemplo.com">
-                            <small id="emailHelp" class="form-text text-light">Não vou compartilhar seu E-mail com
-                                ninguém, relaxa.</small>
+                                onkeyup="validaEmail()" aria-describedby="emailHelp" placeholder="nome@exemplo.com" />
                             <div id="txtEmail"></div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Assunto:</label>
-                            <textarea class="form-control assunto" id="assunto" onkeyup="validaAssunto()"
-                                rows="3"></textarea>
+                            <label class="text-white" for="exampleFormControlTextarea1">Assunto:</label>
+                            <textarea placeholder="Assunto" class="form-control assunto" id="assunto"
+                                onkeyup="validaAssunto()" rows="3"></textarea>
                             <div id="txtAssunto"></div>
                         </div>
-                        <button onclick="enviarForm()" class="btn btn-outline-light mt-3" type="submit">Enviar</button>
+                        <div class="d-flex justify-content-center mt-3">
+                        <button onclick="enviarForm()" class="botao text-white mt-3 me-3 w-25" type="submit">
+                            Enviar
+                        </button>
+                    </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <img src="./assets/img/cv.png" alt="">
+                <div class="modal-footer">
+                    <button type="button" class="botao text-white w-25" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-secondary mb-3">Copyright © 2022 Igor Lima | All Rights Reserved</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

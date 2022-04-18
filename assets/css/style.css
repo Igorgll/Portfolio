@@ -1,3 +1,7 @@
+*{
+    background-color: #000000;
+}
+
 html {
     behavior: smooth;
 }
@@ -7,21 +11,51 @@ html {
     font-weight: bold;
 }
 
-h1, p {
+h, p {
     font-family: 'Poppins', sans-serif;
 }
 
-.bg {
-    background: #C9D6FF;
-    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
-    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+#animacao {
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: animated-text 4s steps(100,end) 1s 1 normal both
 }
 
-.bgContato {
-    background-color: rgba(0, 0, 0, 0.906);
-   
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 100%;}
 }
 
-.green {
-    color: #79fe0c;
+.linkH {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #08D665;
+    text-decoration: none;
+}
+
+.borda {
+    padding: 8px;
+    border: 8px solid #08D665;
+}
+
+.span {
+    color: #08D665;
+}
+
+.botao {
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 2px solid #08D665;
+}
+
+.botao:hover {
+    background-color: #08D665;
+}
+
+.card:hover {
+    background-color: #08D665; 
 }
