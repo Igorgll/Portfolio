@@ -62,6 +62,37 @@ h {
     background-color: #08D665; 
 }
 
+.noSelect {
+    user-select: none;
+}
+
+::selection {
+    background-color: #08D665;
+}
+
+/* Scrollbar personalizada */
+
+*::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 15px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #000000;
+    background-color: #1D1C1A;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #08D665;
+    border-radius: 15px;
+  }
+  
+  :root {
+    scrollbar-color: #08D665 #000000 !important;
+    scrollbar-width: thin !important;
+  }
+
 /* Responsividade */
 
 @media (max-width: 1024px) {
