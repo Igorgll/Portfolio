@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top noSelect" id="navBar">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top noSelect bg" id="navBar">
         <div class="container-fluid">
             <a class="link linkH fs-4" href="#">/Igorgll</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -55,34 +55,22 @@
         </div>
     </nav>
 
-    <div class="container-fluid pt-5 noSelect">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="d-flex justify-content-center mt-5">
-                    <img src="https://github.com/igorgll.png" alt="" class="img-fluid rounded-circle borda" />
+    <div id="particles-js">
+        <div class="heading">
+            <h1 class="linkH fw-bold text-center display-1">
+                Olá! Me chamo Igor Lima.
+            </h1>
+            <p class="linkH fw-bold text-center fs-1 mt-5">Sou desenvolvedor Web Java Jr
+            </p>           
+            <div class="d-flex justify-content-start">
+                <div class="d-flex align-items-center m-auto h-0">
+                    <a class="linkH link fs-5 mt-5 me-3 saiba " href="#sobre">Saiba mais</a>
                 </div>
-            </div>
-                <div class="row">
-                    <h1 class="linkH fw-bold text-center display-1 mb-4 mt-5">
-                        Olá,
-                    </h1>
-                    <p class="text-light text-justify fs-1 fw-bold mb-2 text-justify" id="animacao">
-                        me chamo
-                       Igor Lima e
-                        sou desenvolvedor
-                        <span class="span fw-bold">
-                            Java Jr Full Stack!</span>
-                    </p>
-                    <div class="d-flex justify-content-start">
-                        <div class="d-flex align-items-center m-auto h-0">
-                            <a class="linkH link fs-5 mt-5 me-3 saiba " href="#sobre">Saiba mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>    
         </div>
+    </div>
 
-    <div class="container-fluid d-flex align-items-center vh-100 select" id="sobre">
+    <div class="container-fluid d-flex align-items-center vh-100 select bg" id="sobre" >
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center noSelect">
@@ -111,13 +99,13 @@
         </div>
     </div>
 
-    <div class="container-fluid d-flex align-items-center noSelect">
+    <div class="container-fluid d-flex align-items-center noSelect bg">
         <div class="container">
             <h2 class="text-center text-white display-4 fw-bold mb-5 h2Evolucao">Minha <span class="span">evolução</span> </h2>
             <div class="row d-flex justify-content-around mt-5">
                 <div class="col-md-3 rowCard">
                     <a class="linkH" href="https://agentimove.netlify.app/#/inicio" target="_blank">
-                    <div class="card" style="width: 20rem;">
+                    <div class="card bg-black" style="width: 20rem;">
                         <img src="./assets/img/Hand coding-bro.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="text-center text-white">Projeto <span class="span">aGenTIMove</span> </h5>
@@ -128,7 +116,7 @@
                 </div>
                 <div class="col-md-3 rowCard">
                     <a class="linkH" href="https://github.com/Igorgll/blogPessoalAngular" target="_blank">
-                    <div class="card" style="width: 20rem;">
+                    <div class="card bg-black" style="width: 20rem;">
                         <img src="./assets/img/Hand coding-rafiki.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="text-center linkH">Projeto <span class="span">Blog Pessoal</span> </h5>
@@ -139,7 +127,7 @@
                 </div>
                 <div class="col-md-3 rowCard">
                     <a class="linkH" href="https://github.com/Igorgll" target="_blank">
-                    <div class="card" style="width: 20rem;">
+                    <div class="card bg-black" style="width: 20rem;">
                         <img src="./assets/img/Personal site-amico.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="text-center text-white">Visite meu <span class="span">GitHub!</span> </h5>
@@ -153,7 +141,7 @@
     </div>
 
     <div id="contato" class="jumbotron jumbotron-fluid jumbotronMargin">
-        <div class="container-fluid p-0 vh-100 d-flex align-items-center noSelect">
+        <div class="container-fluid p-0 vh-100 d-flex align-items-center noSelect bg">
             <div class="container">
                 <div class="formulario bg-fluid text-black">
                     <h1 class="display-3 fw-bold mb-5 text-center text-light">
@@ -188,7 +176,7 @@
                             <div id="txtAssunto"></div>
                         </div>
                         <div class="d-flex justify-content-center mt-3">
-                        <button onclick="enviarForm()" class="botao text-white mt-3 me-3 w-25" type="submit">
+                        <button onclick="enviarForm()" class="botao bg text-white mt-3 me-3 w-25" type="submit">
                             Enviar
                         </button>
                     </div>
@@ -209,7 +197,7 @@
         </div>
     </div>
 
-    <footer class="text-center text-secondary mb-3 noSelect">Copyright © 2022 Igor Lima | All Rights Reserved</footer>
+    <footer class="text-center text-secondary pb-4 noSelect bg">Copyright © 2022 Igor Lima | All Rights Reserved</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -222,6 +210,15 @@
         crossorigin="anonymous"></script>
 
     <script src="/assets/script/script.js"></script>
+
+ <!-- Import Particles.js and app.js files -->
+ <script src=
+ "particles.js-master/particles.js">
+</script>
+<script src=
+ "/particles.js-master/demo/js/app.js">
+</script>
+    
 </body>
 
 </html>

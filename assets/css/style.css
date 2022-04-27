@@ -1,7 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
 
-*{
-    background-color: #000000;
+#particles-js {
+    background: black;
+    height: 100vh;
+}
+
+.heading {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+}
+.heading h1 {
+    color: limegreen;
+    font-size: 70px;
+}
+.heading h3 {
+    color: wheat;
+    font-size: 20px;
+}
+
+* {
+    font-family: 'Sora', sans-serif;
+}
+
+.bg {
+    background: #000000;
 }
 
 html {
@@ -9,23 +33,7 @@ html {
 }
 
 .navbar {
-    font-family: 'Sora', sans-serif;
     font-weight: bold;
-}
-
-h {
-    font-family: 'Sora', sans-serif;
-}
-
-#animacao {
-    white-space: nowrap;
-    overflow: hidden; 
-    animation: animated-text 4s steps(100,end) 1s 1 normal both
-}
-
-@keyframes animated-text{
-    from{width: 0;}
-    to{width: 100%;}
 }
 
 .linkH {
@@ -47,6 +55,11 @@ h {
     color: #08D665;
 }
 
+.card:hover {
+    border-radius: 2px;
+    border: 1px solid #08D665;
+}
+
 .botao {
     padding: 5px;
     text-decoration: none;
@@ -56,10 +69,6 @@ h {
 
 .botao:hover {
     background-color: #08D665;
-}
-
-.card:hover {
-    background-color: #08D665; 
 }
 
 .noSelect {
@@ -103,7 +112,6 @@ h {
 
     #animacao {
         text-align: center;
-        animation: none;
         white-space: normal;
         display: block;
         word-wrap: break-word;

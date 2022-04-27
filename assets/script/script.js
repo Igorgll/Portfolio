@@ -6,7 +6,6 @@ let sobrenomeOk = false
 let emailOk = false
 let assuntoOk = false
 
-
 function validaNome() {
     let txtNome = document.querySelector("#txtNome")
     if (nome.value.length < 3) {
@@ -30,7 +29,6 @@ function validaSobrenome() {
         sobrenomeOk = true
     }
 }
-
 
 function validaEmail() {
 
