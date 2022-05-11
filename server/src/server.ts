@@ -44,6 +44,6 @@ const app = express();
         return response.status(201).json({ data: message });
     })
 
-    app.listen(3333, () => {
+    app.listen(process.env.PORT || 3333, () => {
         console.log('Http Server Running!');
     });
