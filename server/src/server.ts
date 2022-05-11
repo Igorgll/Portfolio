@@ -1,10 +1,12 @@
 import express from 'express'
 import { prisma } from './prisma';
 import nodemailer from 'nodemailer'
+import cors from 'cors'
 
 const app = express();
 
     app.use(express.json());
+    app.use(cors());
 
     const transport = nodemailer.createTransport({
         host: "smtp.mailtrap.io",
