@@ -175,7 +175,7 @@
                             <div id="txtAssunto"></div>
                         </div>
                         <div class="d-flex justify-content-center mt-3">
-                        <button onclick="enviarForm()" class="botao bg text-white mt-3 me-3 w-25" type="submit">
+                        <button onclick="enviarEmail()" class="botao bg text-white mt-3 me-3 w-25" type="submit">
                             Enviar
                         </button>
                     </div>
@@ -208,15 +208,26 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/assets/script/script.js"></script>
 
+    <script>
+        function enviarEmail(){
+            Email.send({
+            SecureToken: "592243b0-eff7-4d11-81fa-f3b0d09fcc0c",
+            To : "igorgoncalvesmc2@gmail.com",
+            From : "igorlimagn@gmail.com",
+            Subject : document.querySelector('#nome').value + " com o email: " + document.querySelector('#email').value + " te mandou uma mensagem através do seu portfolio.",
+            Body : document.querySelector('#assunto').value
+        }).then(
+        message => alert("Mensagem enviada com sucesso, muito obrigado!")
+        )
+        };
+    </script>
+
  <!-- Import Particles.js and app.js files -->
- <script src=
- "particles.js-master/particles.js">
-</script>
-<script src=
- "/particles.js-master/demo/js/app.js">
-</script>
+    <script src="particles.js-master/particles.js"></script>
+    <script src="/particles.js-master/demo/js/app.js"></script>
     
 </body>
 

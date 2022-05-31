@@ -1,11 +1,12 @@
-let nome = window.document.getElementById("nome")
-let email = document.querySelector("#email")
+let nome = document.querySelector("#nome")
+let sobrenome = document.querySelector("#sobrenome")
 let assunto = document.querySelector("#assunto")
 let nomeOk = false
 let sobrenomeOk = false
 let emailOk = false
 let assuntoOk = false
 
+// VERIFICAÇÕES DE INPUT
 function validaNome() {
     let txtNome = document.querySelector("#txtNome")
     if (nome.value.length < 3) {
@@ -59,10 +60,3 @@ function validaAssunto() {
 
 }
 
-function enviarForm() {
-    if (nomeOk == true && sobrenomeOk == true && emailOk == true && assuntoOk == true) {
-        alert("Formulário enviado com sucesso!")
-    } else {
-        alert("Preencha o formulário corretamente antes de enviar...")
-    }
-}
