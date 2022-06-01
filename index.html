@@ -217,8 +217,9 @@
             SecureToken: "592243b0-eff7-4d11-81fa-f3b0d09fcc0c",
             To : "igorgoncalvesmc2@gmail.com",
             From : "igorlimagn@gmail.com",
-            Subject : document.querySelector('#nome').value + " com o email: " + document.querySelector('#email').value + " te mandou uma mensagem através do seu portfolio.",
-            Body : document.querySelector('#assunto').value
+            Subject : document.querySelector('#nome').value + " com o email: " + document.querySelector('#email').value + " mandou uma mensagem através do seu portfolio.",
+            Body : document.querySelector('#assunto').value,
+            replyTo: document.querySelector('#email').value,
         }).then(
         message => alert("Mensagem enviada com sucesso, muito obrigado!")
         )
