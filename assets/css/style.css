@@ -58,6 +58,8 @@ html {
 .card:hover {
     border-radius: 2px;
     border: 1px solid #08D665;
+    transition: 0.5s;
+    border-radius: 6px;
 }
 
 .botao {
