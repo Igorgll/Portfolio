@@ -12,7 +12,7 @@
     width: 100%;
 }
 .heading h1 {
-    color: limegreen;
+    color: #08D665;
     font-size: 70px;
 }
 .heading h3 {
@@ -106,52 +106,79 @@ html {
 
 /* Responsividade */
 
-@media (max-width: 1024px) {
-
-    #navBar {
-        display: none;
+@media (max-width: 1080px) {
+    #about_me {
+        font-size: 1.050rem !important;
     }
 
-    #animacao {
-        text-align: center;
-        white-space: normal;
-        display: block;
-        word-wrap: break-word;
+    #container {
+        max-width: 100% !important;
     }
 
-    .saiba {
-        display: none;
+    .card {
+        width: 16rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #foto__sobre {
+        display: none !important;
     }
 
-    .imagemSobre {
-        display: none;
+    #about_me_div {
+        width: 100%;
     }
 
-    .h2Evolucao {
-        margin-top: 2rem;
-    }
-
-    .h2Sobre {
-        margin-top: 3rem;
-        text-align: center;
-    }
-
-    .fs-5 {
-        text-align: center;
-    }
-
-    .pCard {
-        display: none;
+    #about_me_div h2 {
+        font-size: 3rem;
     }
 
     .botao {
-        display: flex;
-        justify-content: center;
+        padding: 10px;
     }
+
+    .card {
+        width: 12rem !important;
+    }
+
+    .card-body p {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .heading h1 {
+        font-size: 2rem !important;
+    }
+
+    .heading p {
+        font-size: 1.275rem !important;
+        font-weight: 400 !important;
+    }
+
+    .heading a {
+        font-size: 1.1rem !important;
+        font-weight: 400 !important;
+    }
+
+    #about_me_div h2 {
+        font-size: 2rem !important;
+    }
+
+    #cards__ {
+        display: flex !important;
+        justify-content: space-around !important;
+        flex-direction: row !important;
+    }
+
+    .card {
+        width: 100% !important;
+        border: 1px solid #08D665 !important;
+    }    
 
     .rowCard {
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin: 24px;
     }
 }
